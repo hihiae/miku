@@ -943,19 +943,19 @@ spawn(function()
         _G.KillV4 or
         _G.RaidPirate 
         then
-            if not game:GetService("Workspace"):FindFirstChild("DITMEMAY") then
+            if not game:GetService("Workspace"):FindFirstChild("LOL") then
                 local LOL = Instance.new("Part")
                 LOL.Name = "LOL"
                 LOL.Parent = game.Workspace
                 LOL.Anchred = true
                 LOL.Transparency = 1
                 LOL.Size = Vector3.new(30, -0.5, 30)
-            elseif game:GetService("Workspace"):FindFirstChild("DITMEMAY") then
-                game.Workspace["DITMEMAY"].CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -3.6, 0)
+            elseif game:GetService("Workspace"):FindFirstChild("LOL") then
+                game.Workspace["LOL"].CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -3.6, 0)
             end
             else
-                if game:GetService("Workspace"):FindFirstChild("DITMEMAY") then
-                    game:GetService("Workspace"):FindFirstChild("DITMEMAY"):Destroy()
+                if game:GetService("Workspace"):FindFirstChild("LOL") then
+                    game:GetService("Workspace"):FindFirstChild("LOL"):Destroy()
                 end
             end
         end)
